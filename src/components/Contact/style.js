@@ -93,6 +93,7 @@ export const SocialBlock = styled(Grid)`
 `
 
 export const SocialItem = styled(Grid)`
+    margin: 10px;
 `
 
 export const SocialTitle = styled.h1`
