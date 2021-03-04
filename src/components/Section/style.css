@@ -1,0 +1,35 @@
+section {
+    height: fit-content;
+    display: grid;
+    /* margin-top: 100px; */
+    justify-content: center;
+    padding: 100px 20px 0 20px;
+    grid-template-columns: 500px 500px;
+    background-color: #DE9E36;
+    align-items: flex-start;
+}
+
+.img-block {
+    overflow: hidden;
+    height: 370px;
+}
+
+.img-block >  img {
+   width: 100%;
+   
+}
+
+.text-block {
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        grid-template-columns: 2fr
+    }
+    .text-block {
+        padding: 20px 0;
+        width: 100%;
+    }
+}
+

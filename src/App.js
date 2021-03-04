@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import {
+  ThemeProvider
+} from '@material-ui/core'
+import theme from './style'
+import Hero from "./components/Hero";
+import Section from "./components/Section";
+import {exp1, exp2, freelance} from './components/Section/data'
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import Activity from "./components/Activity";
+import Skills from "./components/Skills";
+
+const myTheme = theme
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={myTheme}>
+      <Navbar />
+      <Hero />
+      <Section {...exp1} mainTitle='EXPERIENCE'/>
+      <Section {...exp2}/>
+      <Section {...freelance} mainTitle='A PROPOS'/>
+      <Activity />
+      <Skills />
+      <Contact />
+      {/* <Footer /> */}
+    </ThemeProvider >
   );
 }
 
