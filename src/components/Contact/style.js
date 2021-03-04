@@ -33,7 +33,8 @@ export const ContactBlock = styled(Grid)`
 export const ContactBlockForm = styled(Grid)`
     display: block;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 310px;
+    min-height: 610px;
     margin: auto;
     background-color: #37323E;
     padding: 20px;

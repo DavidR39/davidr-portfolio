@@ -15,7 +15,6 @@ const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const changeNav = () => {
-        console.log(window.scrollY)
         if (window.scrollY === 0) {
             setScrollNav(true);
         } else {
@@ -58,7 +57,7 @@ const Navbar = () => {
 
 
     return (
-        <Nav scrollnav={scrollNav} container>
+        <Nav scrollNav={scrollNav} container>
             <MenuDisplayer>
                 <MenuBtn onClick={() => setToggleMenu(!toggleMenu)}>MENU</MenuBtn>
             </MenuDisplayer>

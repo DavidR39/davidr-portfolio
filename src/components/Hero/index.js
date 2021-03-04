@@ -15,7 +15,7 @@ const Hero = () => {
                     <img src='./images/face_co.png' alt='avatar' />
                 </div>
                 <div className='text-block'>
-                    <Typography variant='h1' > David Rollier </Typography>
+                    <Typography fontColor='primary' variant='h1' > David Rollier </Typography>
                     <Typography variant='h2' > #Digital Engineer #Freelance</Typography>
                     <Typography variant='h2' >#Full Stack Developer </Typography>
                 </div>

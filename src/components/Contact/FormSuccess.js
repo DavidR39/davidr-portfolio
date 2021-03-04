@@ -6,7 +6,7 @@ const FormSuccess = () => {
   return (
     <Fade bottom duration={1000} delay={800} distance="30px">
       <Grid >
-        <Typography >Merci ! Je vous contacte dès que possible 😉</Typography>
+        <Typography fontColor='light'>Merci ! Je vous contacte dès que possible 😉</Typography>
       </Grid>
     </Fade>
   );

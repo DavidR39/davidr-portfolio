@@ -31,6 +31,9 @@ const theme = createMuiTheme({
                 margin: 'auto',
                 marginBottom: 50,
                 borderBottom: ({ underlineDark }) => (underlineDark ? '8px solid #DE9E36' : '8px solid #FFF')
+            },
+            root: {
+                color: ({fontColor}) => (fontColor === 'dark' ?  '#000' : (fontColor === 'primary' ? '#DE9E36' : '#FFF') )
             }
         },
         MuiFormControl: {

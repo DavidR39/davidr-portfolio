@@ -31,7 +31,7 @@ const Contact = () => {
         </Fade>
       </ContactBlock>
       <SocialTitle>Suivez moi</SocialTitle>
-      <SocialBlock container justify='center' spacing={5}>
+      <SocialBlock container justify='center'>
         
         <SocialItem item>
         <Link href='https://www.linkedin.com/in/david-rollier-6089b9129/' target='blank'><LinkedInIcon fontSize='large' /></Link>
