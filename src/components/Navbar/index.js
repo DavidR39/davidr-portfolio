@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {
-    Grid,
-    Button,
-    List
-} from '@material-ui/core'
 import './style.css'
-import { animateScroll as scroll } from 'react-scroll'
 import {
     Nav, NavLink,
     LinksList,
@@ -33,9 +27,6 @@ const Navbar = () => {
         window.addEventListener('scroll', changeNav);
     }, []);
 
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    };
 
     /* Liens du menu */
     const links = [
@@ -67,7 +58,7 @@ const Navbar = () => {
 
 
     return (
-        <Nav scrollNav={scrollNav} container>
+        <Nav scrollnav={scrollNav} container>
             <MenuDisplayer>
                 <MenuBtn onClick={() => setToggleMenu(!toggleMenu)}>MENU</MenuBtn>
             </MenuDisplayer>
@@ -75,7 +66,7 @@ const Navbar = () => {
                 {links.map((link, index) => {
                     const { id, label } = link
                     return (
-                        <LinkWrapper>
+                        <LinkWrapper key={index}>
                             <NavLink onClick={() => setToggleMenu(!toggleMenu)} to={id} spy={true} smooth={true} offset={-80} duration={500}>{label}</NavLink>
                         </LinkWrapper>
                     )

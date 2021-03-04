@@ -30,10 +30,10 @@ const LevelGenerator = ({ level }) => {
 
                     return (
                         (x + 1) <= level ?
-                            <StarIcon color='inherit'/> :
+                            <StarIcon key={x} color='inherit'/> :
                             ((x + 0.5) <= level ?
-                                <StarHalfIcon color='inherit' /> :
-                                <StarBorderIcon color='disabled'/>))
+                                <StarHalfIcon key={x} color='inherit' /> :
+                                <StarBorderIcon key={x} color='disabled'/>))
                 }
                 )
             }

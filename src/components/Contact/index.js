@@ -23,7 +23,7 @@ const Contact = () => {
         </ContactBlockForm>
         <Fade right duration={1000} delay={900} distance="30px">
           <ContactBlockText item>
-            <img src='./images/contact.svg' ></img>
+            <img src='./images/contact.svg' alt='contact'></img>
             <ContactText>
               Vous êtes à la recherche d'un indépendant pour effectuer le développement de votre application ? Mon profil vous intéresse ? Vous souhaitez simplement échanger avec moi ? Aucun souci ! Il vous suffit de m'envoyer un message via le formulaire de contact et je vous répondrai dans les plus brefs délais. A très bientôt !
             </ContactText>

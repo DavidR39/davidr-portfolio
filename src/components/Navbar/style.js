@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import {Grid} from '@material-ui/core'
-import {Button} from '../ButtonElements'
 import { Link } from 'react-scroll'
 
 export const Nav = styled(Grid)`

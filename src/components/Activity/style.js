@@ -23,7 +23,7 @@ export const ActivityItem = styled(Paper)`
         background-color: rgba(0, 0, 0, 0.1);
     }
 
-    &:hover > p {
+    &:hover > div {
         top:0;
     }
 `
@@ -40,7 +40,7 @@ export const ActivityIcon = styled.div`
     margin: auto;    
 `
 
-export const ActivityText = styled.p`
+export const ActivityText = styled.div`
     position: absolute;
     left: 0;
     right: 0;

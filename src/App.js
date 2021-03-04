@@ -6,7 +6,6 @@ import theme from './style'
 import Hero from "./components/Hero";
 import Section from "./components/Section";
 import {exp1, exp2, freelance} from './components/Section/data'
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Activity from "./components/Activity";
 import Skills from "./components/Skills";
@@ -24,7 +23,6 @@ function App() {
       <Activity />
       <Skills />
       <Contact />
-      {/* <Footer /> */}
     </ThemeProvider >
   );
 }

@@ -60,7 +60,7 @@ const ContactForm = ({ submitForm }) => {
                         placeholder="Message *"
                         value={values.message}
                         margin='normal'
-                        multiline='true'
+                        multiline
                         rows='7'
                     />
                     {errors.message && <p className="form-error">{errors.message}</p>}
