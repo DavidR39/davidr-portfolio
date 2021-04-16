@@ -31,7 +31,7 @@ const Navbar = () => {
     const links = [
         {
             id: 'home',
-            label: 'Acceuil',
+            label: 'Accueil',
         },
         {
             id: 'experience-1',
